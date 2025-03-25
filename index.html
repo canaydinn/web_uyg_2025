@@ -4,8 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Uygulamaları</title>
+    
 </head>
 <body>
     <p>Web Uygulamaları Dersi 2025</p>
 </body>
+<script>
+   /* function test(){
+    if(true){
+        let degisken="Hello World";
+    }
+    if(true){
+        console.log(degisken);
+    }
+   }
+
+   test() */
+
+
+   /* let degisken="Hello World";
+   let degisken="Merhaba dünya";
+   console.log(degisken); */
+//Hoisting
+/*     degisken="Hello World";
+    console.log(degisken)
+    const degisken; */
+   
+   /*  let adi="Can";
+    const soyadi="Aydın";
+    adi="Ahmet";
+    soyadi="Uzun"; */
+
+   /*  const person={
+        name:"Can"
+    }
+console.log(person.name)
+ */
+/* var degisken="hello world";
+var adet=4;
+
+if(adet>3){
+    let degisken="Merhaba dünya"
+}
+console.log(degisken) */
+/* 
+function topla(a,b){
+    return a+b;
+}
+var a=5;
+var b=15;
+console.log(topla(a,b)) */
+
+//arrow function
+
+/* const topla=(a,b)=>a+b; */
+
+/* function deneme(){
+    console.log("Merhaba"+this.name);
+}
+
+const person={
+    name:"Can",
+    fonk:deneme,
+};
+person.fonk()
+ */
+
+
+
+function add(){
+    console.log(arguments);
+    let total=0;
+    for(let i=0;i<arguments.length;i++){
+        total+=arguments[i];
+    }
+    return total
+}
+console.log(add(1,2,3,4,5,6))
+
+
+const topla=(...args)=>{
+    console.log(args)
+    let total=0;
+    for(let i=0;i<args.length;i++){
+        total+=args[i]
+    }
+    return total
+}
+console.log(topla(1,2,3,4,5,5))
+
+</script>
 </html>
