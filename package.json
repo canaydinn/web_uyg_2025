@@ -1,0 +1,29 @@
+{
+  "name": "web_uyg_2025-2",
+  "version": "1.0.0",
+  "description": "Web Uygulamaları 2025 Dersi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/canaydinn/web_uyg_2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/canaydinn/web_uyg_2025/issues"
+  },
+  "homepage": "https://github.com/canaydinn/web_uyg_2025#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "nodemon": "^3.1.10"
+  }
+}
