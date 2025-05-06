@@ -32,4 +32,14 @@ const register_control=async(req,res)=>{
 
     }
 }
-module.exports={login_control,register_control}
+
+const kullanici_getir=async(req,res)=>{
+    try{
+        const [rows]=await dbConn.query("SELECT * FROM users")
+        console.log(rows)
+        res.json(rows)
+    }catch(error){
+        console.log("Database Error")
+    }
+}
+module.exports={login_control,register_control,kullanici_getir}

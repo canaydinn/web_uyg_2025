@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Getir</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody id="userTableBody">
+
+        </tbody>
+    </table>
+    <script>
+        async function loadUsers(){
+            try{
+                const response=await fetch("http://localhost:5000/api/kullanici_getir")
+                const users=await response.json()
+                const tableBody=document.getElementById('userTableBody')
+                users.forEach((user)=>{
+                    const row=document.createElement("tr")
+                    row.innerHTML=`
+                    <td>${user.name}</td>
+                    <td>${user.password}</td>
+                    `
+                    tableBody.appendChild(row)
+                    
+                   
+                })
+            }catch(error){
+                console.log("Hata")
+            }
+        }
+
+        window.onload=loadUsers
+    </script>
+</body>
+</html>
