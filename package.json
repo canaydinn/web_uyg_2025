@@ -20,7 +20,7 @@
   "homepage": "https://github.com/canaydinn/web_uyg_2025#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
-    "body-parser": "^2.2.0",
+    "body-parser": "^2.4.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
